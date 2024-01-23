@@ -1,0 +1,23 @@
+project:
+  type: book
+
+book:
+  title: "Los Faros Etéreos"
+  author: "Diego Figueiras"
+  date: "1/22/2024"
+  chapters:
+    - index.qmd
+    - Ciclo1_cap1_diosa.qmd
+    - Ciclo1_cap2_princeso.qmd
+    - Ciclo1_cap3_caballero.qmd
+    - Ciclo1_cap4_burguesa.qmd
+    - Ciclo1_cap5_pescador.qmd
+
+format:
+  html:
+    theme: slate
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
