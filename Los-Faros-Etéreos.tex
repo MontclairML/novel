@@ -1,11 +1,10 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
   letterpaper,
-]{krantz}
+]{book}
 
 \usepackage{amsmath,amssymb}
 \usepackage{iftex}
@@ -140,11 +139,7 @@
 \hypersetup{
   pdftitle={Los Faros Etéreos},
   pdfauthor={Diego Figueiras},
-  colorlinks=true,
-  linkcolor={blue},
-  filecolor={Maroon},
-  citecolor={Blue},
-  urlcolor={Blue},
+  hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 \title{Los Faros Etéreos}
@@ -152,15 +147,16 @@
 \date{2024-01-22}
 
 \begin{document}
+\frontmatter
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, boxrule=0pt, sharp corners, frame hidden, borderline west={3pt}{0pt}{shadecolor}, interior hidden, breakable]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, frame hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden, breakable, sharp corners]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
-\hypersetup{linkcolor=}
 \setcounter{tocdepth}{2}
 \tableofcontents
 }
+\mainmatter
 \bookmarksetup{startatroot}
 
 \hypertarget{portada}{%
@@ -784,5 +780,6 @@ Rúnico}\label{capuxedtulo-3-el-caballero-ruxfanico}}
 \chapter{Capítulo 5: El Forero}\label{capuxedtulo-5-el-forero}}
 
 
+\backmatter
 
 \end{document}
