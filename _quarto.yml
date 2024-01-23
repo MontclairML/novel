@@ -17,7 +17,9 @@ format:
   html:
     theme: slate
   pdf:
-    documentclass: scrreprt
+    documentclass: krantz
+    keep-tex: true
+    output-file: pdf-book
 
 editor: visual
 
